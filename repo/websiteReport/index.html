@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>EECS6895 Automatic Sales Leads Finding</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!-- <script src="/assets/js/chart.js"></script> -->
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="assets/js/chart.js"></script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
+							<h1 id="title">Autmatic Sales Leads Finding</h1>
+							<h6>Columbia University <br>
+								EECS 6895 Advanced Big Data & AI<br>
+								2022 Spring<br>
+							</h6>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<div style="margin-top: 40%;">
+								<ul>
+									<style></style>
+									<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Abstract</span></a></li>
+									<li><a href="#motivation" id="motivation-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Motivation</span></a></li>
+									<li><a href="#system" id="system-link" class="skel-layers-ignoreHref"><span class="icon fa-th">System</span></a></li>
+									<li><a href="#MBTI" id="results-link" class="skel-layers-ignoreHref"><span class="icon fa-th">MBTI</span></a></li>
+									<li><a href="#results" id="results-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Results</span></a></li>
+									
+							
+								</ul>
+							</div>
+								
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+								<iframe width="600" height="350" src="https://www.youtube.com/embed/BvOX5FbsG3k" frameborder="0" allowfullscreen></iframe>
+
+								<h2 class="alt">Automatic Sales Leads Finding</h2>
+								<p>EECS 6895 Advanced Big Data & AI	2022 Spring</p>
+								<p>Yuefei Chen, 	Xinzhe Wang</p>
+								<!-- <p>Project Wonderland is a blah blah blah</p>
+								<p>(Abstract here)</p> -->
+
+
+							<footer>
+								<a href="#motivation" class="button scrolly">Motivation</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="motivation" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Motivation</h2>
+							</header>
+
+							<div id="frontmotivate">
+								&nbsp  &nbsp &nbsp &nbspFinding the potential consumer sales leads is challenging and promising.
+								<!-- With the positive cycle of increasing popularity in mobile social networkds and increasing time people spend in it, users of social networks leave a growing footprint on the Internet.  -->If we can find social network users' tendency and preferance via their unorganized public trance in network, we may boost the accuracy and efficiency of advertising and marketing strategies 
+							</div>
+
+							<div class="motivaWord">
+								<h3 >What is Consumer Sales Leads?</h3>
+							</div>
+							<p id="motivatecontext"> Consumuer sales leads are clues that may 
+								increase sales 	and boost response rates for your direct marketing efforts with direct mail and telemarketing lists that target the best consumer prospects for your products or services.</p>
+							<div class="motivaWord">
+								<h3 >What does our project do?</h3>
+							</div>
+							<p id="motivatecontext"> Analyze a specific user's personality and tendency via his tweets. Predict his tendency among a specific group of companies that are closely related.  </p>
+							
+
+
+
+						</div>
+					</section>
+
+
+					<section id="system" class="three">
+						<div class="container">
+
+							<header>
+								<h2>System</h2>
+							</header>
+							<div class="sysDescript">
+								<!-- <p id="descriptiontitle">descriptions</p> -->
+								<p id="sysdetail">
+									Figure below shows the abstract flow chart of model developed in the project. More detailed descriptions of the model is in paper report.<br>
+									In the figure, data collection, pre-processing, output from CNN are omitted.<br>
+									After all tweets from a specific user is obtained and pre-processed, the cleaned data is then fed into into BERT and Google Natual Language API.<br>	
+									Pre-tarined BERT will predict user's MBTI type. Google API will analyse user's sentiment index between (-1,1), as well as predict and label the areas the user might interested in.
+									In the end these middle stage results will be fed into CNN for final classification.
+								</p>
+							</div>
+
+							
+							<div class="system">
+								<embed  src="images/sys.svg">
+								<p id="systext">Model structure</p>
+								
+							</div>
+							<!-- <p align="left">Remember to use combination of descriptions, photos, and figures</p> -->
+
+							<!-- <h3 align="left">Architecture</h3>
+							<p align="left">Blah blah blah</p>
+							<h3 align="left">Technical Components</h3>
+							<p align="left">Blah blah blah</p>
+							<h3 align="left">Prototype</h3>
+							<p align="left">Blah blah blah</p> -->
+
+
+
+						</div>
+					</section>
+					<section id='MBTI' class="two">
+						<div class="container">
+							<header>
+								<h2>	
+									MBTI
+								</h2>
+								<p>click to expand</p>
+							</header>
+
+						</div>
+						<div class="Econtainer">
+							<div class="headerApple"><span>Apple</span>
+						
+							</div>
+							<div class="content">
+								<h3>Apple</h3>
+								<div>
+									Apple Inc. is an American multinational technology company that specializes in consumer electronics, software and online services. [Wiki]
+								</div>
+								<table class="chart" style="margin-left: 100px;">
+									<tr >
+											<td><div id="apple1" style="width: 50%; height: auto;"></div></td>
+											<td><div id="apple2" style="width: auto; height: auto;"></div></td>
+										</tr>
+										<tr>
+											<td><div id="apple3" style="width: auto; height: auto;"></div></td>
+											<td><div id="apple4" style="width: auto; height: auto;"></div></td>
+										</tr>
+								</table>
+								<div  align="center" id="apple5" style="width: auto; height: auto;"></div>
+								<p class="blank">
+										 
+								</p>
+							</div>
+						</div>
+						<div class="Econtainer">
+							<div class="headerSamsung"><span>Samsung</span>
+						
+							</div>
+							<div class="content">
+								<h3>Samsung</h3>
+								<div>
+									Samsung is a South Korean multinational manufacturing conglomerate headquartered in Samsung Town, Seoul, South Korea.[Wiki]<br>
+									In the project, we focus only on Samsung Electronics.
+								</div>
+								<table class="chart",style="margin-left: 100px;">
+									<tr>
+										<td><div id="Samsung1" style="width: auto; height: auto;"></div></td>
+										<td><div id="Samsung2" style="width: auto; height: auto;"></div></td>
+									</tr>
+									<tr>
+										<td><div id="Samsung3" style="width: auto; height: auto;"></div></td>
+										<td><div id="Samsung4" style="width: auto; height: auto;"></div></td>
+									</tr>
+								</table>
+
+								<div align="center" id="Samsung5" style="width: auto; height: auto;"></div>
+								<p class="blank">
+										 
+								</p>
+								
+							</div>
+						</div>
+
+						<div class="Econtainer">
+							<div class="headerNintendo"><span>Nintendo</span>
+						
+							</div>
+							<div class="content">
+								<h3>Nintendo</h3>
+								<div>
+									Nintendo Co., Ltd. is a Japanese multinational video game company headquartered in Kyoto, Japan. It develops video games and video game consoles. [Wiki]
+								</div>
+								<table class="chart",style="margin-left: 100px;">
+									<tr>
+										<td><div id="Nintendo1" style="width: 50%; height: auto;"></div></td>
+										<td><div id="Nintendo2" style="width: auto; height: auto;"></div></td>
+									</tr>
+									<tr>
+										<td><div id="Nintendo3" style="width: auto; height: auto;"></div></td>
+										<td><div id="Nintendo4" style="width: auto; height: auto;"></div></td>
+									</tr>
+								</table>
+
+								<div align="center" id="Nintendo5" style="width: auto; height: auto;">
+								</div>
+								<div>
+									<p class="blank">
+										 
+									</p>
+								</div>
+								
+							</div>
+						</div>
+
+
+					</section>
+
+					<section id="results" class="three">
+						<div class="container">
+							<header>
+								<h2>Results</h2>
+							</header>
+
+								</div>
+									<h3>Demo of final prediction result</h3>
+									<div id="MBTItable" style="float: left;">
+										<table>
+						
+											<tr class="tableheader">
+												<td>Apple</td>
+												<td>Samsung</td>
+											</tr>
+											<tr>
+												<td>Babycraj</td>
+												<td>0x_epic</td>
+											</tr>
+											<tr>
+												<td>Brutelle_</td>
+												<td>AkashAltair</td>
+											</tr>
+											<tr>
+												<td>Moater_Boater</td>
+												<td>Alice_Sim1</td>
+											</tr>
+											<tr>
+												<td>SakaHystalker</td>
+												<td>Cryptikz__</td>
+											</tr>
+											<tr>
+												<td>Squidward7388</td>
+												<td>RealDupre</td>
+											</tr>
+
+										</table>
+									</div>
+									<div id="MBTItabletext" style="float: right;">
+										<p align="justify">
+											Table on the left shows the final result of model prediction. Left column is username representing different users.
+											These users are neither followers of Apple nor Samsung. 
+											Their preferance among Apple and Samsung is predictied using their public tweet data.
+										</p>
+									</div>
+							
+
+									<p>
+
+									</p>
+
+									<div class="space">  </div>
+									<!-- <div> -->
+									<div class = "midTable">
+										<h3>Demo of middle stage prediction result</h3>
+										<table id="midTable">
+											<!-- <tr>
+												<td colspan="7">Demo of middle stage prediction result</td>
+											</tr> -->
+											<tr class="tableheader">
+												<th>Username</th>
+												<th>sentiment</th>
+												<th>Topic of insterests</th>
+												<th>MBTI prediction</th>
+												<th>True fans</th>
+												<th>Prediction</th>
+											</tr>
+											<tr>
+												<td>A</td>
+												<td>-0.2</td>
+												<td>Arts&Entertainment <br> Games</td>
+												<td>ENFP(0.38)</td>
+												<td>Apple</td>
+												<td>Apple</td>
+											</tr>
+											<tr>
+												<td>B</td>
+												<td>0.5</td>
+												<td>Arts&Entertainment <br> Music&Audio</td>
+												<td>ESTP(0.91)</td>
+												<td>Samsung</td>
+												<td>Apple</td>
+											</tr>
+											<tr>
+												<td>C</td>
+												<td>-0.2</td>
+												<td>Arts&Entertainment</td>
+												<td>ISFJ(0.76)</td>
+												<td>Samsung</td>
+												<td>Samsung</td>
+											</tr>
+											<tr>
+												<td>D</td>
+												<td>0.4</td>
+												<td>People&Society <br>Religion&Belief</td>
+												<td>ISFP(0.65)</td>
+												<td>Apple</td>
+												<td>Samsung</td>
+											</tr>
+											<tr>
+												<td>E</td>
+												<td>0.3</td>
+												<td>Arts&Entertainment <br>Movie&Musit</td>
+												<td>ISTP(0.44)</td>
+												<td>Samsung</td>
+												<td>Samsung</td>
+											</tr>
+										</table>
+										<p align="justify">
+											The table above shows the middle stage and final results. The result is obtained from test set so username and post are unavailable.
+											Sentiment, Topic of insterests, MBTI prediction is middle stage results. True fans is ground truth. Prediction is the final prediction results.
+											Using tweets of the user, the sentiment and possible topic of insterests are predicted by Google API,
+											MBTI is predicted by BERT, and final result is predicted using CNN.
+											"True Fans" column shows which brand the user is actually following and "Prediction" column shows the result from model prediciton.
+											The numbers in parentheses under MBTI column indicate the probabilities of the most likely personality types.
+											
+
+										</p>
+									</div>
+
+
+								</div>
+
+
+						</div>
+					</section>
+
+
+
+				
+
+				
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
